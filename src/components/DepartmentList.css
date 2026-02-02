@@ -1,0 +1,131 @@
+#zone-view {
+    width: 100%;
+}
+
+.zone-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.back-btn {
+    border: none;
+    background: transparent;
+    font-size: 1.4rem;
+    cursor: pointer;
+    color: #003366;
+    padding: 4px 8px 4px 0;
+}
+
+.zone-title-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.zone-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #111827;
+}
+
+.zone-subtitle {
+    font-size: 0.9rem;
+    color: #4b5563;
+}
+
+.search-box {
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 11px 40px 11px 14px;
+    border-radius: 999px;
+    border: 1px solid #d1d5db;
+    font-size: 0.98rem;
+    outline: none;
+    box-shadow: 0 2px 8px rgba(15,23,42,0.06);
+    background: #ffffff;
+}
+
+.search-input:focus {
+    border-color: #0074D9;
+    box-shadow: 0 0 0 1px rgba(0,116,217,0.3);
+}
+
+.search-icon {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.1rem;
+    color: #9ca3af;
+}
+
+.layout-grid {
+    display: block;
+}
+
+.card {
+    background: rgba(255,255,255,0.95);
+    border-radius: 16px;
+    padding: 16px 16px 18px;
+    box-shadow: 0 10px 25px rgba(15,23,42,0.12);
+    border: 1px solid rgba(148,163,184,0.25);
+    margin-bottom: 16px;
+}
+
+.dept-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.dept-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+}
+
+.dept-link {
+    flex: 1;
+    display: inline-block;
+    padding: 9px 11px;
+    background: #0074D9;
+    border-radius: 999px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border: 1px solid transparent;
+    transition: all 0.18s ease;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    text-align: center;
+}
+
+.dept-link:hover {
+    background: #005fa3;
+    border-color: #003366;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.25);
+}
+
+.footer-actions {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.note-text {
+    font-size: 0.8rem;
+    color: #003366;
+    margin-top: 4px;
+}

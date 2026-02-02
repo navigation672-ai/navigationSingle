@@ -1,0 +1,58 @@
+.app-header {
+    background: #003366;
+    color: #ffffff;
+    padding: 22px 16px 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.header-center {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 999px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+    overflow: hidden;
+}
+
+.logo-circle img {
+    width: 100px;
+    height: auto;
+}
+
+.header-title-main {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.header-title-sub {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+@media (max-width: 640px) {
+    .app-header {
+        padding: 18px 10px;
+    }
+    .logo-circle {
+        width: 100px;
+        height: 100px;
+    }
+    .logo-circle img {
+        width: 80px;
+    }
+}
