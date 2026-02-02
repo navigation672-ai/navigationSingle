@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { 
     EAST_LAND_DISPLAY, 
-    MAIN_LAND_DISPLAY, 
     generateToken,
     generateMapplsURL 
 } from '../utils';
@@ -10,9 +9,9 @@ import './DepartmentList.css';
 const DepartmentList = ({ zone, onBack }) => {
     const [searchTerm, setSearchTerm] = useState('');
     
-    const departments = zone === 'east' ? EAST_LAND_DISPLAY : MAIN_LAND_DISPLAY;
-    const zoneTitle = zone === 'east' ? 'East Land Departments' : 'Main Land Departments';
-    const zoneSubtitle = `Select a department in ${zone === 'east' ? 'East' : 'Main'} Land to start navigation.`;
+    const departments = EAST_LAND_DISPLAY;
+    const zoneTitle = 'East Land Departments';
+    const zoneSubtitle = 'Select a department in East Land to start navigation.';
     
     const filteredDepts = Object.entries(departments).filter(([code, name]) =>
         name.toLowerCase().includes(searchTerm.toLowerCase())
