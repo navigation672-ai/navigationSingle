@@ -12,9 +12,6 @@ const ZoneSelector = ({ onSelectZone }) => {
                 <button className="zone-btn" onClick={() => onSelectZone('east')}>
                     East Land Departments
                 </button>
-                <button className="zone-btn" onClick={() => onSelectZone('main')}>
-                    Main Land Departments
-                </button>
             </div>
         </section>
     );
