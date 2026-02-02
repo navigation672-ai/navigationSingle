@@ -64,37 +64,27 @@ export const EAST_LAND_DISPLAY = {
     "defense_sourcing": "Defense Sourcing",
 };
 
-export const MAIN_LAND_DEPARTMENTS = {
-    "chassis_shop": "13.209549919810451,80.31742205591088",
-    "gearbox_6s": "13.209837363670559,80.31813483425225",
-    "gearbox_9s": "13.209837363670559,80.31813483425225",
-    "heat_treatment": "13.207957473496801,80.31784613241723",
-    "admin_finance": "13.209693574424433,80.3166161104447",
-    "canteen_main": "13.209821525072439,80.31702112397613",
-    "shop_2_office": "13.208204685252353,80.31658514318255",
-    "vts_shop": "13.208029794646409,80.31705504743034",
-};
 
-export const MAIN_LAND_DISPLAY = {
-    "chassis_shop": "Chassis Shop",
-    "gearbox_6s": "Gearbox Assembly 6S",
-    "gearbox_9s": "Gearbox Assembly 9S",
-    "heat_treatment": "Heat Treatment",
-    "admin_finance": "Admin Office - Finance",
-    "canteen_main": "Canteen",
-    "shop_2_office": "Shop 2 OFFICE",
-    "vts_shop": "VTS Shop",
-};
 
 // Mappls navigation URL generator
 export const generateMapplsURL = (deptCode, token) => {
-    const deptName = EAST_LAND_DISPLAY[deptCode] || MAIN_LAND_DISPLAY[deptCode];
-    const deptCoords = EAST_LAND_DEPARTMENTS[deptCode] || MAIN_LAND_DEPARTMENTS[deptCode];
+    const deptName = EAST_LAND_DISPLAY[deptCode];
+    const deptCoords = EAST_LAND_DEPARTMENTS[deptCode];
     
     if (!deptName || !deptCoords) return '#';
     
     const [lat, lon] = deptCoords.split(',');
     const encodedName = encodeURIComponent(deptName);
-    
     return `https://mappls.com/navigation?places=${lat.trim()},${lon.trim()},${encodedName}&isNav=true&mode=driving&token=${token}`;
 };
+
+
+
+
+
+
+
+
+
+
+
